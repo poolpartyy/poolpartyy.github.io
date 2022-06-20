@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+}
+
+header {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.nav {
+    text-align: center;
+    list-style-type: none;
+    border: 1px solid white;
+    padding: 3.5%;
+    margin-top: 8%;
+    margin-left: 2.8%;
+    margin-right: 2.8%;
+}
+
+.liste {
+    text-align: center;
+    list-style-type: none;
+    border: 1px solid white;
+    padding: 3.5%;
+    margin-top: 8%;
+    margin-left: 2.8%;
+    margin-right: 2.8%;
+}
+
+button {
+    background: rgba(38, 38, 138, 0.514);
+    color: white;
+    padding: 1%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
