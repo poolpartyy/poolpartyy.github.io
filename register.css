@@ -23,11 +23,11 @@ header {
     padding: 1%;
     border-radius: 10px;
     cursor: pointer;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .nav button:hover {
-    transform: scale(1.2)
+    transform: scale(1.1)
 }
 
 .party {

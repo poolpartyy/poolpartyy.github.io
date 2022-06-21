@@ -1,0 +1,30 @@
+body {
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+.nav {
+    text-align: center;
+    list-style-type: none;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+}
+
+.nav button {
+    background: rgba(38, 38, 138, 0.514);
+    color: white;
+    padding: 1%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.nav button:hover {
+    transform: scale(1.1)
+}
