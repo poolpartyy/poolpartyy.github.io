@@ -8,22 +8,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
     <header>
     <h1>Pool Party</h1>
     </header>
 
-    <div class="nav">
-        <li><a href="register.html"><button>Publier sa pool party</button></a></li>
+    <div id="nav">
+        <li><button>Publier sa pool party</button></li>
     </div>
-    </div>
-
-    <div class="liste">
-        <li><a href="parties.html"><button>Liste des pool party disponibles</button></a></li>
-    </div>
-    </div>
-
     
+    <div id="party">
+        <form action="">
+        <h1>Publication</h1>
+        <div>
+        <label for="nom">Nom de la pool party :</label>
+        <input type="text" id="nom" name="nom" placeholder="nom de la pool party" required> 
+        </div>
+        <div>
+        <label for="adresse">Adresse de la pool party :</label>
+        <input type="text" id="adresse" name="adresse" placeholder="adresse de la pool party" required>
+        </div>
+        <div>
+        <label for="capacite">Capacité d'acceuil :</label>
+        <input type="text" id="capacite" name="capacite" placeholder="capacité d'acceuil de la pool party" required>
+        </div>
+        <div> 
+        <label for="phone">Numéro de téléphone (facultatif) :</label>
+        <input type="text" id="phone" name="phone" placeholder="numéro de téléphone">
+        </div>
+        <div>  
+        <label for="heure1">Heure de début :</label>
+        <input type="text" id="heure1" name="heure1" placeholder="10h15" required>
+        </div>
+        <div>
+        <label for="heure2">Heure de fin :</label>
+        <input type="text" id="heure2" name="heure2" placeholder="20h15" required>
+        </div>
+        <button type="submit">Publier</button>
+     </div>
 
+     <script src="index.js"></script>
 </body>
 </html>
