@@ -1,48 +1,44 @@
 let btn = document.getElementById("nav");
-let party = document.getElementById("party")
-let number = 0
+let party = document.getElementById("party");
+
 btn.addEventListener("click", () => {
     btn.style.display = "none";
     party.style.display = "block"
 });
 
-let button = document.querySelector('button[type="submit"]');
+let button = document.querySelector('button[type="button"]');
 
 button.addEventListener("click", () => {
 
-    localStorage.setItem("nom", document.querySelector("#nom").value);
-    localStorage.setItem("adresse", document.querySelector("#adresse").value);
-    localStorage.setItem("capacite", document.querySelector("#capacite").value);
-    localStorage.setItem("phone", document.querySelector("#phone").value);
-    localStorage.setItem("heure1", document.querySelector("#heure1").value);
-    localStorage.setItem("heure2", document.querySelector("#heure2").value);
+    let nom = document.getElementById("nom").value;
+    let adresse = document.getElementById("adresse").value;
+    let capacite = document.getElementById("capacite").value;
+    let phone = document.getElementById("phone").value;
+    let heure1 = document.getElementById("heure1").value;
+    let heure2 = document.getElementById("heure2").value;
+
     
-    
-    if (document.querySelector("#nom").value !== "" && document.querySelector("#adresse").value !== "" && document.querySelector("#capacite").value !== "" && document.querySelector("#phone").value !== "" && document.querySelector("#heure1").value !== "" && document.querySelector("#heure2").value !== "") {
+    if (nom !== "" && adresse !== "" && capacite !== "" && phone !== "" && heure1 !== "" && heure2 !== "") {
  
         
-        console.log("")
+        console.log("");
+        ntable = 1;
         let table = document.createElement('table');
-        let thead = document.createElement('thead');
-        let tbody = document.createElement('tbody');
 
-        table.appendChild(thead);
-        table.appendChild(tbody);
-
-        document.getElementById('body').appendChild(table);
+        document.querySelector('body').appendChild(table);
 
         let row_1 = document.createElement('tr');
-        let heading_1 = document.createElement('th');
+        let heading_1 = document.createElement('td');
         heading_1.innerHTML = "Nom de la pool party";
-        let heading_2 = document.createElement('th');
+        let heading_2 = document.createElement('td');
         heading_2.innerHTML = "heure de début";
-        let heading_3 = document.createElement('th');
+        let heading_3 = document.createElement('td');
         heading_3.innerHTML = "heure de fin";
-        let heading_4 = document.createElement('th');
+        let heading_4 = document.createElement('td');
         heading_4.innerHTML = "adresse";
-        let heading_5 = document.createElement('th');
+        let heading_5 = document.createElement('td');
         heading_5.innerHTML = "capacité";
-        let heading_6 = document.createElement('th');
+        let heading_6 = document.createElement('td');
         heading_6.innerHTML = "téléphone";
 
         row_1.appendChild(heading_1);
@@ -51,22 +47,22 @@ button.addEventListener("click", () => {
         row_1.appendChild(heading_4);
         row_1.appendChild(heading_5);
         row_1.appendChild(heading_6);
-        thead.appendChild(row_1);
+        table.appendChild(row_1);
 
 
         let row_2 = document.createElement('tr');
         let row_2_data_1 = document.createElement('td');
-        row_2_data_1.innerHTML = document.querySelector("#nom").value;
+        row_2_data_1.innerHTML = nom;
         let row_2_data_2 = document.createElement('td');
-        row_2_data_2.innerHTML = document.querySelector("#heure1").value;
+        row_2_data_2.innerHTML = heure1;
         let row_2_data_3 = document.createElement('td');
-        row_2_data_3.innerHTML = document.querySelector("#heure2").value;
+        row_2_data_3.innerHTML = heure2;
         let row_2_data_4 = document.createElement('td');
-        row_2_data_4.innerHTML = document.querySelector("#adresse").value;
+        row_2_data_4.innerHTML = adresse;
         let row_2_data_5 = document.createElement('td');
-        row_2_data_5.innerHTML = document.querySelector("#capacite").value;
+        row_2_data_5.innerHTML = capacite;
         let row_2_data_6 = document.createElement('td');
-        row_2_data_6.innerHTML = document.querySelector("#phone").value;
+        row_2_data_6.innerHTML = phone;
 
         row_2.appendChild(row_2_data_1);
         row_2.appendChild(row_2_data_2);
@@ -74,13 +70,15 @@ button.addEventListener("click", () => {
         row_2.appendChild(row_2_data_4);
         row_2.appendChild(row_2_data_5);
         row_2.appendChild(row_2_data_6);
-        tbody.appendChild(row_2);
+        table.appendChild(row_2);
 
-        table.style.background = 'white';
-        table.style.color = 'black';        
-    }
+        table.style.background = "white";
+        table.style.color = 'black';
+        table.style.textAlign = "center";
+        table.style.border = "1px solid black";
+        row_1.style.border = "1px solid black";
+        row_2.style.border = "1px solid black";
+        alert("Formulaire envoyé !")
+}
 
 });
-
-
-
