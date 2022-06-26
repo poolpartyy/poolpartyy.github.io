@@ -22,24 +22,25 @@ button.addEventListener("click", () => {
  
         
         console.log("");
-        ntable = 1;
+        btn.style.display = "block";
+        party.style.display = "none"
         let table = document.createElement('table');
 
         document.querySelector('body').appendChild(table);
 
         let row_1 = document.createElement('tr');
-        let heading_1 = document.createElement('td');
-        heading_1.innerHTML = "Nom de la pool party";
-        let heading_2 = document.createElement('td');
-        heading_2.innerHTML = "heure de début";
-        let heading_3 = document.createElement('td');
-        heading_3.innerHTML = "heure de fin";
-        let heading_4 = document.createElement('td');
-        heading_4.innerHTML = "adresse";
-        let heading_5 = document.createElement('td');
-        heading_5.innerHTML = "capacité";
-        let heading_6 = document.createElement('td');
-        heading_6.innerHTML = "téléphone";
+        let heading_1 = document.createElement('th');
+        heading_1.innerHTML = "Nom de la pool party :";
+        let heading_2 = document.createElement('th');
+        heading_2.innerHTML = "heure de début :";
+        let heading_3 = document.createElement('th');
+        heading_3.innerHTML = "heure de fin :";
+        let heading_4 = document.createElement('th');
+        heading_4.innerHTML = "adresse :";
+        let heading_5 = document.createElement('th');
+        heading_5.innerHTML = "capacité :";
+        let heading_6 = document.createElement('th');
+        heading_6.innerHTML = "téléphone :";
 
         row_1.appendChild(heading_1);
         row_1.appendChild(heading_2);
@@ -72,12 +73,7 @@ button.addEventListener("click", () => {
         row_2.appendChild(row_2_data_6);
         table.appendChild(row_2);
 
-        table.style.background = "white";
-        table.style.color = 'black';
-        table.style.textAlign = "center";
-        table.style.border = "1px solid black";
-        row_1.style.border = "1px solid black";
-        row_2.style.border = "1px solid black";
+        table.classList("table")
         alert("Formulaire envoyé !")
 }
 
