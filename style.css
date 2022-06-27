@@ -40,7 +40,7 @@ button:hover {
     border: 1px solid;
     border-radius: 8px;
     padding: 0 50px 0 50px;
-    background: white;
+    background: rgb(243, 243, 255);
     text-align: center;
     margin-top: 10%;
     margin-left: auto;
@@ -49,21 +49,28 @@ button:hover {
   }
   
 #party h1 {
-      margin-bottom: 6%;
-      margin-top: 7%;
+    width: 80%;
+    background: rgb(15, 15, 86);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    margin-top: 8%;
+    padding: 2%;
   }
   
 #party div {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      min-height: 83px;
-      margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 83px;
+    margin-top: 25px;
   }
   
 div label {
-    background: rgb(200, 200, 255);
+    background: rgb(225, 225, 255);
     margin-bottom: 3%;
+    padding: 2%;
     font-weight: 600;
   }
   
@@ -99,19 +106,26 @@ div input {
     margin-bottom: 3%;
 }  */
 
+table {
+    width: 90%;
+    margin-top: 5%;
+}
+
 table, th, td {
     background: white;
     color: black;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 3%;
     margin-bottom: 3%;
     border: 1px solid rgba(62, 62, 160, 0.532);
 }
 
 th, td {
+    margin-top: 3%;
     padding-top: 2%;
     padding-bottom: 2%;
 }
+
+
 
