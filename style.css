@@ -118,7 +118,7 @@ table {
 }
 
 table, th, td {
-    background: white;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     color: black;
     text-align: center;
     margin-right: auto;
@@ -133,5 +133,12 @@ th, td {
     padding-bottom: 2%;
 }
 
+th {
+    text-decoration: underline;
+}
+
+td {
+    font-family: 'Space Mono', monospace;
+}
 
 
