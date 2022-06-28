@@ -15,7 +15,7 @@ retour.addEventListener("click", () => {
 })
 
 let button = document.querySelector('button[type="button"]');
-const storageKey = "local_v3.1"
+const storageKey = "local_v3.7"
 
 button.addEventListener("click", () => {
   event.preventDefault()
@@ -33,10 +33,13 @@ button.addEventListener("click", () => {
     btn.style.display = "block";
     party.style.display = "none"
     let table = document.createElement('table');
-    document.querySelector('body').appendChild(table);
+    const ref = document.getElementById("res");
+
+    ref.insertBefore(table, ref.children[0]);
+
     let row_1 = document.createElement('tr');
     let heading_1 = document.createElement('th');
-    heading_1.innerHTML = "Date de la pool party";
+    heading_1.innerHTML = "Date";
     let heading_2 = document.createElement('th');
     heading_2.innerHTML = "heure de début";
     let heading_3 = document.createElement('th');
@@ -84,9 +87,16 @@ button.addEventListener("click", () => {
         tables += item.outerHTML;
         return item.outerHTML;
       })
+
+    retour.style.display = "none";  
     localStorage.setItem(storageKey, tables);
-    retour.style.display = "none";
-    alert("Formulaire envoyé !")
+    alert("Pool Party publiée !")
+    document.getElementById("jour").value = "";
+    document.getElementById("adresse").value = "";
+    document.getElementById("capacite").value = "";
+    document.getElementById("phone").value = "";
+    document.getElementById("heure1").value = "";
+    document.getElementById("heure2").value = "";
   }
 });
 var support = (function() {
@@ -116,6 +126,10 @@ $(function() {
   if (localStorage.getItem(storageKey) !== null) {
     var str = localStorage.getItem(storageKey)
     var doc = stringToHTML(str)
-    document.querySelector('body').appendChild(doc);
+    var tbls = Array.from(doc.children)
+    for (var count = 0; count < tbls.length; count++) {
+      //console.log(count + ': ' + tbls[count].innerHTML);
+      document.getElementById('res').appendChild(tbls[count]);
+    }
   }
 });
