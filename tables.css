@@ -10,11 +10,22 @@ header {
     margin-top: 5%;
 }
 
+header::after {
+    content: "";
+    height: 1px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 #retour button{
     position: absolute;
     padding: 1%;
-    top: 4%;
-    left: 5%;
+    top: 5.5%;
+    left: 7%;
+    color: white;
 }
 
 #nav {

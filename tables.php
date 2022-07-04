@@ -13,13 +13,12 @@
     <h1>Pool Party's List</h1>
 </header>
 
-<div id="retour"><a href="form.html"><button>Retour</button></div>
+<div id="retour"><button><a href="form.html">Retour</a></button></div>
 
 <div id="nav">
 <nav>
-    <li><button>Acceuil</button></li>
-    <li><button>Publier sa pool party</button></li>
-    
+    <li><button><a href="index.html">Acceuil</a></button></li>
+    <li><button><a href="form.html">Publier sa pool party</a></button></li>
 </nav>
 </div>
 

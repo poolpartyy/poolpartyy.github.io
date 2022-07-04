@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 <?php
 
 $servname = 'localhost';
@@ -39,26 +48,17 @@ if ($number === 1) {
     $number = 2;
 }
 
-// if ($number = 2) {
-//         echo '<table>
-//             <tr>
-//                 <th>Date</th>
-//                 <th>Heure de début</th>
-//                 <th>Heure de fin</th>
-//                 <th>Adresse</th>
-//                 <th>Capacité</th>
-//                 <th>Téléphone</th>
-//             </tr>
-//             <tr>
-//                 <td>$date</td>
-//                 <td>$heure1</td>
-//                 <td>$heure2</td>
-//                 <td>$adresse</td>
-//                 <td>$capacite</td>
-//                 <td>$phone</td>
-//             </tr>
-//         </table>';
-// }
-
-
 ?>
+
+
+<script>
+    window.location.replace("http://coursphp/tables.php");
+</script>
+</body>
+</html>
+
+
+
+
+
+
