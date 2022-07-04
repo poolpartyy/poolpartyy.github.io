@@ -22,7 +22,6 @@ $heure1 = "";
 $heure2 = "";
 $number = 0;
 
-if(isset($_POST['button'])) {
     try{
         $conn = new PDO("mysql:host=$servname;dbname=$dbname", $user, $pass);
         $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
@@ -32,7 +31,6 @@ if(isset($_POST['button'])) {
         catch(PDOException $e){
             echo "Erreur : " . $e->getMessage();
         }
-}
 
 if ($number === 1) {
     $date = $_POST["jour"];
