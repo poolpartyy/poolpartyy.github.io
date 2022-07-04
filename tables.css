@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+}
+
+header {
+    text-align: center;
+    margin-top: 5%;
+}
+
+#retour button{
+    position: absolute;
+    padding: 1%;
+    top: 4%;
+    left: 5%;
+}
+
+#nav {
+    text-align: center;
+    padding: 3.5%;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav button{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    background: rgba(38, 38, 138, 0.514);
+    color: white;
+    padding: 1%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+table {
+    width: 90%;
+    margin-top: 8%;
+}
+
+table, th, td {
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    color: black;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3%;
+    border: 1px solid rgba(62, 62, 160, 0.532);
+}
+
+th, td {
+    margin-top: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+th {
+    text-decoration: underline;
+}
+
+td {
+    font-family: 'Space Mono', monospace;
+}
